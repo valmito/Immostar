@@ -1,0 +1,30 @@
+<html>
+<meta charset='utf-8'>
+{% block stylesheets %}
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/bootstrap-grid.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/bootstrap-reboot.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/Immo_css.css') }}" rel="stylesheet" />
+{% endblock %}
+    <head>
+        <p>
+            <title>{% block title %}IMMOSTAR, votre star{% endblock %}IMMOSTAR, votre star</title>
+        </p>
+          {% block menu %}
+            <ul>
+                <li><a href="/bien/créerBien">Créer un bien</a>
+                <li><a href="/bien/créerBien">Recenser tout les biens</a>
+                <li><a href="/bien/créerBien">A Rénover</a>
+            <ul>
+    {% endblock %}
+        
+    <head>
+        <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+    <footer>
+    Site céer par moi-même
+    </footer>
+</html>
+
