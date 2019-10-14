@@ -11,11 +11,13 @@
             <title>{% block title %}IMMOSTAR, votre star{% endblock %}IMMOSTAR, votre star</title>
         </p>
           {% block menu %}
-            <ul>
-                <li><a href="/bien/créerBien">Créer un bien</a>
-                <li><a href="/bien/créerBien">Recenser tout les biens</a>
-                <li><a href="/bien/créerBien">A Rénover</a>
-            <ul>
+            <nav>
+                <ul>
+                    <li><a href="/bien/creerBien">Créer un bien</a>
+                    <li><a href="/bien/afficherBien">Recenser</a>
+                    <li><a href="/bien/creerBien">A Rénover</a>
+                <ul>
+            </nav>
     {% endblock %}
         
     <head>

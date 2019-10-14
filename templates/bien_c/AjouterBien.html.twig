@@ -15,16 +15,16 @@ Formulaire Ajouter Bien
 {{ form_errors(form) }}
 <div class="form-group">
 {# Génération du label. #}
-{{ form_label(form.nb_chambre,"",{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+{{ form_label(form.nbChambre,"",{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 {# Affichage des erreurs pour ce champ précis. #}
-{{ form_errors(form.nb_chambre) }}
-{{ form_widget(form.nb_chambre) }}
+{{ form_errors(form.nbChambre) }}
+{{ form_widget(form.nbChambre) }}
 <div class="form-group">
 {# Génération du label. #}
-{{ form_label(form.nb_piece, "", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+{{ form_label(form.nbPiece, "", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 {# Affichage des erreurs pour ce champ précis. #}
-{{ form_errors(form.nb_piece) }}
-{{ form_widget(form.nb_piece) }}
+{{ form_errors(form.nbPiece) }}
+{{ form_widget(form.nbPiece) }}
 <div class="form-group">
 {# Génération du label. #}
 {{ form_label(form.superficie, "", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
@@ -94,4 +94,3 @@ Formulaire Ajouter Bien
 </div>{# empty Twig template #}
 </center>
 {% endblock %}
-{#{% extends '../Bas.html'%}}#}

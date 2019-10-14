@@ -49,5 +49,10 @@ class BienRepository extends ServiceEntityRepository //extends \Doctrine\ORM\Ent
         ;
     }
     */
-    
+    public function AfficherTout(){
+        return $this->createQueryBuilder('b')
+            ->getQuery()
+            ->getResult()
+        ;
+    }
 }

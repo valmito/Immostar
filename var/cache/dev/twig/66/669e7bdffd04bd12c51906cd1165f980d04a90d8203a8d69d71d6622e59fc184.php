@@ -61,17 +61,17 @@ class __TwigTemplate_b48984ed8d7c95209e1f79fa4fe3f3248dcf02f0c69aa9c1783d6d9cc78
           ";
         // line 13
         $this->displayBlock('menu', $context, $blocks);
-        // line 26
+        // line 22
         echo "        
     <head>
         <body>
         ";
-        // line 29
+        // line 25
         $this->displayBlock('body', $context, $blocks);
-        // line 30
+        // line 26
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 31
+        // line 27
         echo "    </body>
     <footer>
     Site céer par moi-même
@@ -152,16 +152,13 @@ class __TwigTemplate_b48984ed8d7c95209e1f79fa4fe3f3248dcf02f0c69aa9c1783d6d9cc78
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "menu"));
 
         // line 14
-        echo "        <center>
-            ";
-        // line 18
-        echo "            <ul>
-                <li><a href=\"/bien/créerBien\">Créer un bien</a>
-                <li><a href=\"/bien/créerBien\">Recenser tout les biens</a>
-                <li><a href=\"/bien/créerBien\">A Rénover</a>
-            <ul>
-        </center>
-        <br/>
+        echo "            <nav>
+                <ul>
+                    <li><a href=\"/bien/creerBien\">Créer un bien</a>
+                    <li><a href=\"/bien/afficherBien\">Recenser</a>
+                    <li><a href=\"/bien/creerBien\">A Rénover</a>
+                <ul>
+            </nav>
     ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -171,7 +168,7 @@ class __TwigTemplate_b48984ed8d7c95209e1f79fa4fe3f3248dcf02f0c69aa9c1783d6d9cc78
 
     }
 
-    // line 29
+    // line 25
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -189,7 +186,7 @@ class __TwigTemplate_b48984ed8d7c95209e1f79fa4fe3f3248dcf02f0c69aa9c1783d6d9cc78
 
     }
 
-    // line 30
+    // line 26
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -214,7 +211,7 @@ class __TwigTemplate_b48984ed8d7c95209e1f79fa4fe3f3248dcf02f0c69aa9c1783d6d9cc78
 
     public function getDebugInfo()
     {
-        return array (  193 => 30,  175 => 29,  158 => 18,  155 => 14,  145 => 13,  126 => 11,  114 => 7,  110 => 6,  106 => 5,  101 => 4,  91 => 3,  75 => 31,  72 => 30,  70 => 29,  65 => 26,  63 => 13,  58 => 11,  54 => 9,  52 => 3,  48 => 1,);
+        return array (  190 => 26,  172 => 25,  155 => 14,  145 => 13,  126 => 11,  114 => 7,  110 => 6,  106 => 5,  101 => 4,  91 => 3,  75 => 27,  72 => 26,  70 => 25,  65 => 22,  63 => 13,  58 => 11,  54 => 9,  52 => 3,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -232,17 +229,13 @@ class __TwigTemplate_b48984ed8d7c95209e1f79fa4fe3f3248dcf02f0c69aa9c1783d6d9cc78
             <title>{% block title %}IMMOSTAR, votre star{% endblock %}IMMOSTAR, votre star</title>
         </p>
           {% block menu %}
-        <center>
-            {#<a class=\"navbar-brand\" href=\"/\">
-                <img src=\"{{ asset('img/logo1.gif') }}\" width=\"300\" >
-            </a>#}
-            <ul>
-                <li><a href=\"/bien/créerBien\">Créer un bien</a>
-                <li><a href=\"/bien/créerBien\">Recenser tout les biens</a>
-                <li><a href=\"/bien/créerBien\">A Rénover</a>
-            <ul>
-        </center>
-        <br/>
+            <nav>
+                <ul>
+                    <li><a href=\"/bien/creerBien\">Créer un bien</a>
+                    <li><a href=\"/bien/afficherBien\">Recenser</a>
+                    <li><a href=\"/bien/creerBien\">A Rénover</a>
+                <ul>
+            </nav>
     {% endblock %}
         
     <head>

@@ -17,18 +17,22 @@
                     <th>Modifier</th>
                     <th>Supprimer</th>
                 </tr>
-                {% for unArticle in articles %}
+                {% for unArticle in result %}
                     <tr>
-                        <td>{{ unArticle.code }}</td>
-                        <td>{{ unArticle.designation }}</td>
-                        <td>{{ unArticle.qte }} €</td>
-                        <td>{{ unArticle.prixunit }}</td>
+                        <td>{{ unArticle.nbChambre }}</td>
+                        <td>{{ unArticle.nbPiece }}</td>
+                        <td>{{ unArticle.superficie }} m</td>
+                        <td>{{ unArticle.prix }} €</td>
+                        <td>{{ unArticle.chauffage }}</td>
+                        <td>{{ unArticle.annee }}</td>
+                        <td>{{ unArticle.localisation }}</td>
+                        <td>{{ unArticle.etat }}</td>
                         <td><a href="/article/update/{{ unArticle.id }}" class="btn btn-outline-primary">MODIFIER</a></td>
                         <td><a href="/article/verif/supprimer/{{ unArticle.id }}" class="btn btn-outline-danger">SUPPRIMER</a></td>
                     </tr>
                 {% endfor %}
             </table><br/>
-           
+
         </div>
     </center>
 

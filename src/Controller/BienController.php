@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HTTPFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\Session;
 use App\Entity\Bien;
 use App\Form\BienType;
 
@@ -89,8 +90,8 @@ class BienController extends AbstractController
     public function listerBienParCateg1(Request $request) {
        
         $em = $this->getDoctrine()->getManager();
-        $valeur = $em->getRepository(Article::class)->rechercherParCateg();    
-        return $this->render('article/artParCateg.html.twig',array('result'=>$valeur));
+        $valeur = $em->getRepository(Bien::class)->AfficherTout();    
+        return $this->render('bien_c/AfficherBien.html.twig',array('result'=>$valeur));
      }
      
      /**

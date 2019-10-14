@@ -10,5 +10,9 @@ nav li{
     height:40px;
     padding: 0px;
     margin: 0px;
-    list-style-type:none;
+    border:1px solid black;
+    text-align:center;
+}
+nav li:hover{
+    background-color:#3388BB;
 }

@@ -110,28 +110,28 @@ class __TwigTemplate_e25b59e45f83028f81f4971badf1c460f5382d2ea6a9883ac0464085b9d
 <div class=\"form-group\">
 ";
         // line 18
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 18, $this->source); })()), "nb_chambre", [], "any", false, false, false, 18), 'label', ["label_attr" => ["class" => "col-sm-3 control-label"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 18, $this->source); })()), "nbChambre", [], "any", false, false, false, 18), 'label', ["label_attr" => ["class" => "col-sm-3 control-label"]]);
         echo "
 ";
         // line 20
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 20, $this->source); })()), "nb_chambre", [], "any", false, false, false, 20), 'errors');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 20, $this->source); })()), "nbChambre", [], "any", false, false, false, 20), 'errors');
         echo "
 ";
         // line 21
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 21, $this->source); })()), "nb_chambre", [], "any", false, false, false, 21), 'widget');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 21, $this->source); })()), "nbChambre", [], "any", false, false, false, 21), 'widget');
         echo "
 <div class=\"form-group\">
 ";
         // line 24
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 24, $this->source); })()), "nb_piece", [], "any", false, false, false, 24), 'label', ["label_attr" => ["class" => "col-sm-3 control-label"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 24, $this->source); })()), "nbPiece", [], "any", false, false, false, 24), 'label', ["label_attr" => ["class" => "col-sm-3 control-label"]]);
         echo "
 ";
         // line 26
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 26, $this->source); })()), "nb_piece", [], "any", false, false, false, 26), 'errors');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 26, $this->source); })()), "nbPiece", [], "any", false, false, false, 26), 'errors');
         echo "
 ";
         // line 27
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 27, $this->source); })()), "nb_piece", [], "any", false, false, false, 27), 'widget');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 27, $this->source); })()), "nbPiece", [], "any", false, false, false, 27), 'widget');
         echo "
 <div class=\"form-group\">
 ";
@@ -322,16 +322,16 @@ Formulaire Ajouter Bien
 {{ form_errors(form) }}
 <div class=\"form-group\">
 {# Génération du label. #}
-{{ form_label(form.nb_chambre,\"\",{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+{{ form_label(form.nbChambre,\"\",{'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 {# Affichage des erreurs pour ce champ précis. #}
-{{ form_errors(form.nb_chambre) }}
-{{ form_widget(form.nb_chambre) }}
+{{ form_errors(form.nbChambre) }}
+{{ form_widget(form.nbChambre) }}
 <div class=\"form-group\">
 {# Génération du label. #}
-{{ form_label(form.nb_piece, \"\", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
+{{ form_label(form.nbPiece, \"\", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}
 {# Affichage des erreurs pour ce champ précis. #}
-{{ form_errors(form.nb_piece) }}
-{{ form_widget(form.nb_piece) }}
+{{ form_errors(form.nbPiece) }}
+{{ form_widget(form.nbPiece) }}
 <div class=\"form-group\">
 {# Génération du label. #}
 {{ form_label(form.superficie, \"\", {'label_attr': {'class': 'col-sm-3 control-label'}}) }}

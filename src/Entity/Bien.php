@@ -21,12 +21,12 @@ class Bien
     /**
      * @ORM\Column(type="integer")
      */
-    private $nb_piece;
+    private $nbPiece;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $nb_chambre;
+    private $nbChambre;
 
     /**
      * @ORM\Column(type="integer")
@@ -80,24 +80,24 @@ class Bien
 
     public function getNbPiece(): ?int
     {
-        return $this->nb_piece;
+        return $this->nbPiece;
     }
 
     public function setNbPiece(int $nb_piece): self
     {
-        $this->nb_piece = $nb_piece;
+        $this->nbPiece = $nb_piece;
 
         return $this;
     }
 
     public function getNbChambre(): ?int
     {
-        return $this->nb_chambre;
+        return $this->nbChambre;
     }
 
     public function setNbChambre(int $nb_chambre): self
     {
-        $this->nb_chambre = $nb_chambre;
+        $this->nbChambre = $nb_chambre;
 
         return $this;
     }

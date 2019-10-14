@@ -25,15 +25,15 @@ class BienType extends AbstractType
     {
         $builder
             
-            ->add('nb_chambre', NumberType::class,array('label'=>'nb_chambre','required'=>true))
-            ->add('nb_piece',NumberType::class,array('label'=>'nb_piece','required'=>true))
+            ->add('nbChambre', NumberType::class,array('label'=>'nombre de chambre','required'=>true))
+            ->add('nbPiece',NumberType::class,array('label'=>'nombre de piece','required'=>true))
             ->add('superficie',NumberType::class,array('label'=>'superficie','required'=>true))
             ->add('prix', NumberType::class,array('label'=>'prix','required'=>true))
             ->add('chauffage', TextType::class,array('label'=>'chauffage','required'=>true))    
-            ->add('annee', NumberType::class,array('label'=>'annee','required'=>true))    
+            ->add('annee', NumberType::class,array('label'=>'année','required'=>true))    
             ->add('localisation', TextType::class,array('label'=>'localisation','required'=>true))
-            ->add('etat', TextType::class,array('label'=>'etat','required'=>true))
-            ->add('id_type', EntityType::class,array('class'=>Type::class,'label'=>'id_type','required'=>true,'choice_label'=>'libelle'))   
+            ->add('etat', TextType::class,array('label'=>'état','required'=>true))
+            ->add('id_type', EntityType::class,array('class'=>Type::class,'label'=>'type de logement','required'=>true,'choice_label'=>'libelle'))   
             ->add('valider',SubmitType::class)
             ->add('annuler',ResetType::class);
     }

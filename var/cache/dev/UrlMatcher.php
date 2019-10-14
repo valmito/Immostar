@@ -16,9 +16,14 @@ return [
         '/bien/c' => [[['_route' => 'bien_c', '_controller' => 'App\\Controller\\BienController::index'], null, null, null, false, false, null]],
         '/bien/creerBien' => [[['_route' => 'creerBien', '_controller' => 'App\\Controller\\BienController::creerBien'], null, null, null, false, false, null]],
         '/bien/creerFormConnexionAction' => [[['_route' => 'creerFormConnexionActionBien', '_controller' => 'App\\Controller\\BienController::creerFormConnexionAction'], null, null, null, false, false, null]],
+        '/bien/afficherBien' => [[['_route' => 'afficherBien', '_controller' => 'App\\Controller\\BienController::listerBienParCateg1'], null, null, null, false, false, null]],
+        '/article/afficher' => [[['_route' => 'affichage_final', '_controller' => 'App\\Controller\\BienController::indexAction'], null, null, null, false, false, null]],
         '/type/c' => [[['_route' => 'type_c', '_controller' => 'App\\Controller\\TypeController::index'], null, null, null, false, false, null]],
+        '/user/security' => [[['_route' => 'user_security', '_controller' => 'App\\Controller\\UserSecurityController::index'], null, null, null, false, false, null]],
+        '/login' => [[['_route' => 'login', '_controller' => 'App\\Controller\\UserSecurityController::login'], null, null, null, false, false, null]],
         '/visite/c' => [[['_route' => 'visite_c', '_controller' => 'App\\Controller\\VisiteController::index'], null, null, null, false, false, null]],
         '/visiteur/c' => [[['_route' => 'visiteur_c', '_controller' => 'App\\Controller\\VisiteurController::index'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\BienController ::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
@@ -37,6 +42,14 @@ return [
                         .'|(*:159)'
                     .')'
                 .')'
+                .'|/article/(?'
+                    .'|update/(?'
+                        .'|([^/]++)(*:199)'
+                        .'|register(*:215)'
+                    .')'
+                    .'|verif/supprimer/([^/]++)(*:248)'
+                    .'|supprimer/([^/]++)(*:274)'
+                .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -46,8 +59,12 @@ return [
         116 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception::showAction'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'], ['token'], null, null, false, false, null]],
-        159 => [
-            [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
+        159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
+        199 => [[['_route' => 'upd_route', '_controller' => 'App\\Controller\\BienController::updateAction'], ['id'], null, null, false, true, null]],
+        215 => [[['_route' => 'r_register', '_controller' => 'App\\Controller\\BienController::register'], [], null, null, false, false, null]],
+        248 => [[['_route' => 'verif_del_art', '_controller' => 'App\\Controller\\BienController::deleteVerif'], ['id'], null, null, false, true, null]],
+        274 => [
+            [['_route' => 'del_art', '_controller' => 'App\\Controller\\BienController::deleterArticle'], ['id'], null, null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],
